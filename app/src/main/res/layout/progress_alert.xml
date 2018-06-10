@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/marginLayouts">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.2"
+            android:indeterminateTint="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/texDialog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ejemplo de muestra"
+            android:textSize="@dimen/text_title"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/CancelRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/progressdialog"
+        android:padding="@dimen/marginLayouts"
+        android:text="@string/cancel_solicitud"
+        android:textColor="@color/TextColor"
+        android:textStyle="bold" />
+
+</LinearLayout>

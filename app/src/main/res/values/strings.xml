@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">BigApp</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="notificationText">Notificaciones</string>
+
+    <string name="facebook_app_id">1671494179567812</string>
+    <string name="fb_login_protocol_scheme">fb1671494179567812</string>
+
+    <string name="google_maps_key">AIzaSyC3SRrbvDtU4cxY_fo0wDMM9je8ZGpyrHY</string>
+    <string name="details">Detalles del Producto</string>
+    <string name="titlelMap">Direccion</string>
+    <string name="msg_politicas"><![CDATA[<u>Politicas de privacidad</u>]]></string>
+
+    <string name="search">que deseas buscar hoy ?</string>
+    <string name="loading">cargando</string>
+    <string name="cancel_solicitud">cancelar</string>
+    <string name="more_items">Mas Opciones</string>
+
+    <string name="title_activity_network">Network</string>
+    <string name="tab_text_1">Contactos</string>
+    <string name="tab_text_2">Estados</string>
+
+    <string name="title_activity_network__manager">Network_Manager</string>
+    <string name="Home">Inicio</string>
+    <string name="localhost">192.168.0.28</string>
+
+</resources>

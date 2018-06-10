@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Configuracion de Busqueda">
+        <SwitchPreference
+            android:key="Enable"
+            android:summary="Habilitar la busqueda de un producto de forma detallada"
+            android:title="Busqueda Detallada" />
+
+        <EditTextPreference
+            android:key="Distance"
+           android:dependency="Enable"
+            android:summary="escribe la ciudad donde deseas buscar tu producto "
+            android:title="Delimitacion de Busqueda" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="Nosotros">
+        <Preference android:title="Cuentas Sincronizadas">
+            <intent android:action="android.settings.SYNC_SETTINGS" />
+        </Preference>
+
+        <Preference android:title="Sitio Web">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://www.google.com.co/" />
+        </Preference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

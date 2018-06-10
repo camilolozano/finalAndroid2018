@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item
+        android:id="@+id/navigation_subheader"
+        android:title="Otras Opciones">
+        <menu>
+            <item
+                android:id="@+id/networt_media"
+                android:icon="@drawable/ico_social"
+                android:title="Red Social"/>
+            <item
+                android:id="@+id/menu_opcion_2"
+                android:icon="@drawable/check"
+                android:title="inteligent manager"/>
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Import" />
+
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Configuraciones" />
+
+        <item
+            android:id="@+id/oferts"
+            android:icon="@drawable/oferts"
+            android:title="Ofertas" />
+
+        <item
+            android:id="@+id/end_sesion"
+            android:icon="@drawable/session"
+            android:title="Cerrar Secion" />
+    </group>
+
+
+</menu>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context="com.lozano.camilo.shop.start_content.Login">
+
+    <LinearLayout
+        android:id="@+id/log"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/marginLayouts"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+
+        <Button
+            android:id="@+id/loginBig"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/loginBigheight"
+            android:layout_margin="@dimen/marginElements"
+            android:background="@color/button"
+            android:gravity="center_horizontal|center_vertical"
+            android:onClick="startSesionBigapp"
+            android:text="Login Big app"
+            android:textColor="@color/TextColor"
+            android:textStyle="bold"
+
+            />
+
+
+        <Button
+            android:id="@+id/PhoneLogin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/loginBigheight"
+            android:layout_below="@id/loginBig"
+            android:layout_margin="@dimen/marginElements"
+            android:background="@color/notification"
+            android:gravity="center_horizontal|center_vertical"
+            android:onClick="startSesionPhoneIN"
+            android:text="Telefono"
+            android:visibility="gone"
+            android:textColor="@color/TextColor"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="AnimationRegister"
+            android:text="Registrarse"
+            android:textSize="@dimen/text_title"
+            android:layout_marginTop="15dp"
+            android:textAlignment="center" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="url"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:onClick="urlchangue"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/startLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/marginLayouts"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_emailSt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/EmailStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo"
+                android:inputType="text" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_passwSt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/PasswordStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:inputType="textPassword" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/SaveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/loginBigheight"
+            android:layout_margin="@dimen/marginElements"
+            android:onClick="StartSessionApp"
+            android:background="@color/button"
+            android:textColor="@color/TextColor"
+            android:text="Iniciar Sesion"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/startPhoneLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/marginLayouts"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/PhoneStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Telefono"
+                android:inputType="number" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/LoginINPhone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/loginBigheight"
+            android:layout_margin="@dimen/marginElements"
+            android:onClick="StartPhoneIN"
+            android:background="@color/notification"
+            android:textColor="@color/TextColor"
+            android:text="Iniciar Sesion"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
